@@ -8,6 +8,7 @@
   ],
   "vars": {
     "MY_VAR": "my-variable",
+    "JWT_SECRET" : "secret",
     //this is connection pool url (accelerate)
     "DATABASE_URL": "prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiMDFKWFdNQ0EwSlhRSEVGRThZVjVNOVJRUTMiLCJ0ZW5hbnRfaWQiOiI0Yjc5OGEyOTQ3NWQ0NTRhMmE3ODc1YmJjNDY0OGEwNTk1ODI2ZDY0ODlhNmFhNWUwYWZmMmI0OGNkZGRjYmEzIiwiaW50ZXJuYWxfc2VjcmV0IjoiZGQ3Y2VlNjgtYTNmZS00OWRiLTkzNmYtYjgyYWMwMTZmNTVhIn0.BxvE_aeJTohsu6GGxI-IMHzZNcBduVaNrXmDTQwH1nI"
 
