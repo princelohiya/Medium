@@ -2,12 +2,12 @@ import { ChangeEvent, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { BACKEND_URL } from "../config";
-import { SignupInput } from "@/zod-inference-medium-blog";
+import { SignupType } from "@princelohia/medium-common";
 
 export const Auth = ({ type }: { type: "signup" | "signin" }) => {
   const navigate = useNavigate();
 
-  const [postInputs, setPostInputs] = useState<SignupInput>({
+  const [postInputs, setPostInputs] = useState<SignupType>({
     name: "",
     email: "",
     password: "",
