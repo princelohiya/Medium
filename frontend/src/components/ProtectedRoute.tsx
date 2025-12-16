@@ -1,4 +1,3 @@
-import { Navigate } from "react-router-dom";
 import Unauthorized from "./Unauthorized";
 
 export const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
