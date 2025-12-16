@@ -16,7 +16,9 @@ userRouter.get("/", (c) => {
 });
 
 userRouter.get("/me", async (c) => {
-  const authHeader = c.req.header("Authorization") || "";
+  const authHeader =
+    c.req.header("Authorization")?.replace("Bearer ", "") || "";
+
   const user = await verify(authHeader, c.env.JWT_SECRET);
 
   if (!user) {

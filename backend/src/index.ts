@@ -18,15 +18,7 @@ const app = new Hono<{
 }>();
 
 // Add CORS middleware first - covers all API routes
-app.use(
-  "/api/*",
-  cors({
-    origin: "http://localhost:5173", // Your Vite dev server
-    allowHeaders: ["Content-Type", "Authorization"],
-    allowMethods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    credentials: true, // If using cookies/JWT with credentials
-  })
-);
+app.use(cors()); // Enable CORS for all routes by default
 
 app.get("/", (c) => {
   return c.text("Hello Hono");

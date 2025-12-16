@@ -104,7 +104,6 @@ blogRouter.get("/bulk", async (c) => {
       },
     },
   });
-  console.log("BACKEND BLOG SAMPLE:", blogs[0]);
 
   return c.json({ blogs });
 });

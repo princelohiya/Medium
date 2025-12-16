@@ -9,50 +9,48 @@ import Profile from "./pages/Profile";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        {/* Public routes */}
-        <Route path="/" element={<Signup />} />
-        <Route path="/signin" element={<Signin />} />
+    <Routes>
+      {/* Public routes */}
+      <Route path="/" element={<Signup />} />
+      <Route path="/signin" element={<Signin />} />
 
-        {/* Protected routes */}
-        <Route
-          path="/blogs"
-          element={
-            <ProtectedRoute>
-              <Blogs />
-            </ProtectedRoute>
-          }
-        />
+      {/* Protected routes */}
+      <Route
+        path="/blogs"
+        element={
+          <ProtectedRoute>
+            <Blogs />
+          </ProtectedRoute>
+        }
+      />
 
-        <Route
-          path="/blog/:id"
-          element={
-            <ProtectedRoute>
-              <Blog />
-            </ProtectedRoute>
-          }
-        />
+      <Route
+        path="/blog/:id"
+        element={
+          <ProtectedRoute>
+            <Blog />
+          </ProtectedRoute>
+        }
+      />
 
-        <Route
-          path="/profile"
-          element={
-            <ProtectedRoute>
-              <Profile />
-            </ProtectedRoute>
-          }
-        />
+      <Route
+        path="/profile"
+        element={
+          <ProtectedRoute>
+            <Profile />
+          </ProtectedRoute>
+        }
+      />
 
-        <Route
-          path="/publish"
-          element={
-            <ProtectedRoute>
-              <Publish />
-            </ProtectedRoute>
-          }
-        />
-      </Routes>
-    </BrowserRouter>
+      <Route
+        path="/publish"
+        element={
+          <ProtectedRoute>
+            <Publish />
+          </ProtectedRoute>
+        }
+      />
+    </Routes>
   );
 }
 
