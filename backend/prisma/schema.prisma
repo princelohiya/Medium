@@ -1,6 +1,6 @@
 datasource db {
   provider = "postgresql"
-  // url      = env("DATABASE_URL_DIRECT")
+  url      = env("DATABASE_URL_DIRECT")
 }
 
 generator client {
@@ -13,6 +13,7 @@ model User {
   name     String?
   password String
   posts    Post[]
+  createdAt DateTime @default(now())
 }
 
 model Post {

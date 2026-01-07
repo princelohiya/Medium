@@ -18,7 +18,6 @@ userRouter.get("/", (c) => {
 userRouter.get("/me", async (c) => {
   const authHeader =
     c.req.header("Authorization")?.replace("Bearer ", "") || "";
-
   const user = await verify(authHeader, c.env.JWT_SECRET);
 
   if (!user) {
@@ -36,12 +35,23 @@ userRouter.get("/me", async (c) => {
       id: true,
       name: true,
       email: true,
+      createdAt: true,
+      posts: {
+        orderBy: {
+          createdAt: "desc", // Newest posts first
+        },
+        select: {
+          id: true,
+          title: true,
+          content: true,
+          createdAt: true,
+        },
+      },
     },
   });
 
   return c.json({ user: dbUser });
 });
-
 // --------------------- SIGNUP ---------------------
 userRouter.post("/signup", async (c) => {
   const body = await c.req.json();
