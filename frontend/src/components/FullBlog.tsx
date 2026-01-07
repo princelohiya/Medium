@@ -17,7 +17,7 @@ export const FullBlog = ({ blog }: { blog: Blog }) => {
       <Appbar />
 
       <div className="flex justify-center">
-        <div className="w-full max-w-screen-xl px-4 md:px-6 pt-10 md:pt-16">
+        <div className="w-full max-w-screen-xl px-4 md:px-6 pt-10 md:pt-7">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10">
             {/* ===== MAIN CONTENT ===== */}
             <div className="md:col-span-8">
@@ -25,20 +25,20 @@ export const FullBlog = ({ blog }: { blog: Blog }) => {
                 {blog.title}
               </h1>
 
-              <div className="text-slate-500 mt-3 text-sm">
+              <div className="text-slate-600 mt-3 text-sm">
                 Published on {formatDate(blog.createdAt)}
               </div>
 
-              <hr className="my-6 border-slate-200" />
+              <hr className="my-2.5 border-slate-200" />
 
-              <div className="text-base md:text-lg leading-relaxed text-slate-800 whitespace-pre-line">
+              <div className="text-base md:text-lg leading-relaxed text-slate-800 whitespace-pre-line ">
                 {blog.content}
               </div>
             </div>
 
             {/* ===== DIVIDER (DESKTOP ONLY) ===== */}
             <div className="hidden md:flex md:col-span-1 justify-center">
-              <div className="w-px bg-slate-300 h-full" />
+              <div className="w-[1px] bg-slate-300 h-full" />
             </div>
 
             {/* ===== AUTHOR SECTION ===== */}
