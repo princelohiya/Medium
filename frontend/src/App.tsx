@@ -10,7 +10,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
       <ScrollToTop />
       <Routes>
         {/* Public routes */}
@@ -54,7 +54,7 @@ function App() {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </div>
   );
 }
 
