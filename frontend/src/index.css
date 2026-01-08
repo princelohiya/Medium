@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Apply this in your global CSS */
+body {
+  font-family: "Inter", sans-serif; /* UI elements (Nav, Buttons) */
+}
+
+.article-content {
+  font-family: "Merriweather", serif; /* The actual blog post text */
+  line-height: 1.6;
+}
