@@ -12,6 +12,7 @@ blogging-app-like-medium/
 ├── backend/     → Cloudflare Workers API + Prisma
 ├── frontend/    → React + Vite client
 ├── common/      → Shared types and validation (Zod)
+├── screenshots  → UI images
 └── README.md
 ```
 
@@ -203,13 +204,13 @@ Project includes UI previews:
 ![Home Page](screenshots/1.png)
 
 ### Create Post
-![Create Post](screenshots/2.PNG)
+![Create Post](screenshots/2.png)
 
 ### Blog List
-![Blog List](screenshots/3.PNG)
+![Blog List](screenshots/3.png)
 
 ### Login Page
-![Login Page](screenshots/4.PNG)
+![Login Page](screenshots/4.png)
 
 
 ## 📌 Future Improvements
