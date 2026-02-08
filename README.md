@@ -200,7 +200,7 @@ npm run build
 Project includes UI previews:
 
 ### Home Page
-![Home Page](screenshots/1.PNG)
+![Home Page](screenshots/1.png)
 
 ### Create Post
 ![Create Post](screenshots/2.PNG)
